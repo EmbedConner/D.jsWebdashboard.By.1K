@@ -1,0 +1,15 @@
+footer {
+    background: rgb(21, 23, 24);
+    padding: 20px;
+    z-index: 1;
+    height: auto;
+}
+
+footer .footer_title_guild_size_and_user_size {
+    display: flex;
+    color: rgb(197, 197, 197);
+}
+
+footer .footer_titile_gp {
+    margin-top: 10px;
+}

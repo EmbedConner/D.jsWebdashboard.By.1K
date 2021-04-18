@@ -1,0 +1,108 @@
+header {
+    height: 70px;
+    line-height: 70px;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+nav ul {
+    list-style: none;
+    text-align: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a,
+.logout_btn,
+.login_btn {
+    text-decoration: none;
+    color: #909090;
+    font-size: .9em;
+    padding: 8px;
+    transition: .2s;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    color: #272727;
+    text-decoration: none;
+}
+
+.login_btn {
+    color: #000000;
+    text-decoration: none;
+    border: 1px solid #000000;
+    padding: .45rem 2rem;
+    border-radius: 5px;
+    font-size: .9em;
+    transition: transform .1s ease-out, border .1s ease-out, background-color .15s ease-out, color .1s ease-out;
+    margin: 2rem 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login_btn:hover {
+    color: #4b4b4b;
+    border: 1px solid #595959;
+    text-decoration: none;
+}
+
+.logout_btn:hover {
+    background-color: rgba(255, 14, 14, 0.076);
+    border-radius: 5px;
+    transition: .4s;
+    color: black;
+    text-decoration: none;
+}
+
+.header_bot_username {
+    color: #161616;
+    font-size: 1.3em;
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+}
+
+.bot-img {
+    margin-top: -2px;
+    margin-left: 2px;
+}
+
+.header_bot_avatar_left {
+    float: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 1.3em;
+}
+
+.header_bot_avatar {
+    border-radius: 50%;
+    transform: translate(-5px, -3px);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.header_user_avatar {
+    border-radius: 50%;
+    margin: 0;
+    margin-top: -20px;
+    transform: translate(0px, 8px);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.header_user_username {
+    color: #161616;
+    margin-left: 5px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header_user_username:hover {
+    color: #161616;
+    margin-left: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}

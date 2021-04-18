@@ -1,0 +1,14 @@
+<%- include('blocks/header', {bot, user, path}) %>
+<main style="background-color: rgb(142, 142, 255);">
+    <div class="index_main_center_title">
+        <% if (user) { %>
+        <h1>Thank you! for using <%= bot.user.username %></h1>
+        <% } else { %>
+        <h1><%= bot.user.username %> Real Make</h1>
+        <% } %>
+        <p>
+            In Development Website.
+        </p>
+    </div>
+</main>
+<%- include('blocks/footer') %>

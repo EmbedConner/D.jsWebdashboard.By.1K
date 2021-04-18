@@ -1,0 +1,32 @@
+.main_stats_gp{
+    margin: 40px 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.main_stats_gp h1{
+    color: #1b1b1b;
+    text-decoration: none;
+    font-size: 3.9em;
+    font-family: 'Righteous', cursive;
+    font-weight: bold;
+}
+
+.stats_box{
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.stats_nav{
+    background-color: rgb(228, 228, 228);
+    padding: 25px 25px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 2px 7px 0 rgb(158, 158, 158);
+}
+
+.stats_online{
+    font-family: 'Righteous',
+    cursive;
+    color: black;
+}

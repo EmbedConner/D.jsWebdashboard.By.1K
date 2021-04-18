@@ -1,0 +1,23 @@
+.main_howto_gp{
+    margin: 40px 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.main_howto_gp h1{
+    color: #1b1b1b;
+    text-decoration: none;
+    font-size: 3.9em;
+    font-family: 'Righteous', cursive;
+    font-weight: bold;
+}
+
+.usage_code_style_bk{
+    background: #cfcfcf;
+    border-radius: 3px;
+    color: rgb(255, 49, 203);
+    border-left: 4px solid #0015ff;
+    display: inline-block;
+    padding-left: 4px;
+    padding-right: 4px;
+}

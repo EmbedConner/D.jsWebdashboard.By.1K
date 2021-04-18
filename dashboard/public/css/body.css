@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fafafa;
+    height: calc(100% - 2em);
+}
+
+main {
+    min-height: calc(100vh - 69.99px - 120.81px);
+}

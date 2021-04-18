@@ -1,0 +1,11 @@
+<%- include('blocks/header', {bot, user, path}) %>
+<main>
+    <div class="main_userprofile_gp">
+        <div class="profile_gp">
+            <img class="header_user_avatar" src="<%= `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png?size=128` %>" width="135px">
+            <p class="pf_username">@<%= user.username %></p>
+            <a class="logout_btn" href="/logout"><span style="color: rgb(255, 80, 80); font-size: 1.2em;">LogOut</span></a>
+        </div>
+    </div>
+</main>
+<%- include('blocks/footer') %>

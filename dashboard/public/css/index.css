@@ -1,0 +1,18 @@
+.index_main_center_title{
+    text-align: center;
+    margin: 40px 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.index_main_center_title h1{
+    color: #1b1b1b;
+    text-decoration: none;
+    font-size: 3.9em;
+    font-family: 'Righteous', cursive;
+    font-weight: bold;
+}
+.index_main_center_title p{
+    color: #000000;
+    font-size: 1.8em;
+    font-weight: bold;
+}

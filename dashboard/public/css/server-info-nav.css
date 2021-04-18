@@ -1,0 +1,31 @@
+.server_info_nav_server_avatar_left{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.server_info_nav_server_avatar{
+    border-radius: 50%;
+    transform: translate(-5px,-3px);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(255, 255, 255);
+}
+.server_info_nav_bage{
+    background-color: rgb(117, 158, 240);
+    padding: 1px 7px;
+    border-radius: 20px;
+    color: white;
+    margin-left: 5px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.kick_bot{
+    padding: 5px;
+    font-weight: bold;
+}
+
+.kick_bot:hover{
+    background-color: rgba(255, 14, 14, 0.076);
+    border-radius: 5px;
+    transition: .4s;
+    text-decoration: none;
+}

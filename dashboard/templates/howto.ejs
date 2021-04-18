@@ -1,0 +1,36 @@
+<%- include('blocks/header', {bot, user, path}) %>
+<main>
+    <div class="main_howto_gp">
+        <h1 style="text-align: center;" >How to?</h1>
+        <% const help = {};
+            bot.commands.forEach((command) => {
+            const cat = command.help.category;
+            if (!help.hasOwnProperty(cat)) help[cat] = [];
+            help[cat].push(command);
+        });
+        %>
+
+        <% for (const category in help) { %>
+            <div>
+                <h3 class="cmd-category"><%= category %></h3>
+                <% for (const command of help[category]) { %>
+                <div class="commands-colums">
+                    <div class="commands">
+                        <h3 class="command-title"><%= command.help.name.toProperCase() %></h3>
+                        <p class="command-desc">
+                            <%= command.help.description %>
+                        </p>
+                        <p class="usage-ex">
+                            Permission: <%= command.conf.permLevel %>
+                        </p>
+                        <p class="usage_code_style_bk">
+                            Usage: <%= howto.prefix %><%= command.help.usage %>
+                        </p>
+                    </div>
+                </div>
+                <% } %>
+            </div>
+        <% } %>
+    </div>
+</main>
+<%- include('blocks/footer') %>

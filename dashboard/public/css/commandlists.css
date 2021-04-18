@@ -1,0 +1,54 @@
+.main_commandlists_gp{
+    margin: 40px 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.main_commandlists_gp h1{
+    color: #1b1b1b;
+    text-decoration: none;
+    font-size: 3.9em;
+    font-family: 'Righteous', cursive;
+    font-weight: bold;
+}
+
+.cmd-category{
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    color: #0a93e2;
+    border-left: 4px solid #ffd000
+}
+
+.cmd-category{
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 3px;
+}
+
+.commands-colums{
+    margin-left: 10px;
+    flex-wrap: wrap;
+}
+
+.command-title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+.command-desc,
+.command-usage{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4em;
+}
+
+.usage-ex{
+    color: crimson;
+    background: #cfcfcf;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 3px;
+    border-left: 3px solid #ff5353;
+    display: inline-block;
+}

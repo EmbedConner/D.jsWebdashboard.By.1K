@@ -1,0 +1,24 @@
+<%- include('blocks/header', {bot, user, path}) %>
+<main>
+    <div class="main_stats_gp">
+        <h1 style="text-align: center;">Status</h1>
+        <div class="stats_box">
+            <img class="header_user_avatar" style="margin-top: -2px;" src="<%= `https://cdn.discordapp.com/avatars/${bot.user.id}/${bot.user.avatar}.png?size=128` %>" width="155px"></a><span style="color: black; font-weight: bold;"></span>
+            <h3><i class="fas fa-circle" style="color: rgb(255, 44, 44);"></i> <span class="stats_online"><%= bot.user.setActivity(`${bot.user.username}`, {type: "LISTENING"}) %></span></h3>
+            <div class="stats_box">
+                <div class="stats_nav" style="display: flex;">
+                    <p><i class="fa fa-fw fa-server" style="color: aqua;" aria-hidden="true"></i> <b>Guild</b> : <%= stats.servers.toLocaleString(); %> Servers</p>
+                    <p><i class="fas fa-filter" aria-hidden="true" style="color: rgb(81, 255, 0);"></i> <b>Uptime</b> : <%= stats.uptime %></p>
+                    <p><i class="fa fa-fw fa-users" style="color: rgb(247, 222, 0);" aria-hidden="true"></i> <b>Users</b> : <%= stats.members.toLocaleString(); %></p>
+                    <p><i class="fa fa-fw fa-microphone" style="color: rgb(255, 0, 200);" aria-hidden="true"></i> <b>Voice Channel</b> : <%= stats.voice.toLocaleString(); %></p>
+                    <p><i class="fa fa-fw fa-hashtag" style="color: rgb(9, 255, 0);" aria-hidden="true"></i> <b>Text Channel</b> : <%= stats.text.toLocaleString(); %></p>
+                    <p><i class="fa fa-fw fa-tasks" style="color: rgb(255, 0, 76);" aria-hidden="true"></i> <b>Memory</b> : <%= stats.memoryUsage %> MB</p>
+                    <p><i class="fa fa-fw fa-cogs" style="color: rgb(0, 255, 106);" aria-hidden="true"></i> <b>Discord.js Version</b> : <%= stats.dVersion %> MB</p>
+                    <p><i class="fa fa-fw fa-cog" style="color: rgb(255, 196, 0);" aria-hidden="true"></i> <b>Node.js Version</b> : <%= stats.nVersion %> MB</p>
+                    <p><i class="fa fa-fw fa-cog" style="color: rgb(0, 255, 34);" aria-hidden="true"></i> <b>Prefix</b> : <%= stats.prefix %></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<%- include('blocks/footer') %>

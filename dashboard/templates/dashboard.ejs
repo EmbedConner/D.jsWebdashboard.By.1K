@@ -1,0 +1,39 @@
+<%- include('blocks/header', {bot, user, path}) %>
+<main>
+    <div class="main_dashboard_gp">
+        <h1 style="text-align: center;">Please select a server</h1>
+        <% user.guilds.forEach(guild => { 
+            const permsOnGuild = new perms(guild.permissions);
+            if(!permsOnGuild.has("MANAGE_GUILD")) return;
+        %>
+        <div>
+            <% 
+            let href, text;
+            let enabled;
+            if(bot.guilds.get(guild.id)) {
+              href = `/dashboard/${guild.id}/settings`;
+              text = "Settings";
+              enabled = true;
+            } else {
+              href = `https://discordapp.com/oauth2/authorize?client_id=${bot.appInfo.id}&scope=bot&guild_id=${guild.id}&response_type=code&redirect_uri=${encodeURIComponent(bot.config.dashboard.callbackURL)}`;
+              text = "Add Bot";
+              enabled = bot.appInfo.botPublic;
+            }
+            %> 
+        </div>
+        <div class="dashboard_server_colum container">
+            <!-- Server Icon -->
+            <% if (guild.icon) { %>
+                <a href="<%= href %>"><img class="dashboard_server_icon" src="<%= `https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}.png?size=128` %>" style="width: 50px;" alt="<%= guild.name %>"></a>
+            <% } else {%>
+                <a href="<%= href %>"><img class="dashboard_server_icon" src="/public/images/discord-default.png" width="50px" alt="<% guild.name %>"></a>
+            <% } %>
+            <!-- Server Name -->
+            <a href="<%= href %>" class="dashboard_server_name" role="button"> <%= guild.name %></a>
+            <!-- Server Button -->
+            <a href="<%= href %>" class="dashboard-btn<% if(!enabled) { %> disabled<% } %>" role="button"> <%= text %></a>
+        </div>
+        <% }); %>
+    </div>
+</main>
+<%- include('blocks/footer') %>
